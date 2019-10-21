@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+
+<body onload="open2()">
+
+<button id="logout" class="button" onclick="logOut()">Đăng Xuất</button>
+
+<br> <br> <br> <br>
+
+<fieldset class="purple-square-container">
+    <h3 style="text-align: center; color: #0d5806;"> Mục Thêm Sản Phẩm </h3>
+
+    <input class="effect-1" type="text" id="newProduct" placeholder="Tên Sản Phẩm ">
+    <input class="effect-1" type="text" id="imgProduct" placeholder="Link Ảnh ">
+    <input class="effect-1" type="text" id="sllProduct" placeholder="Số Lượng ">
+    <span class="focus-border"></span>
+
+    <p id="show" style="color: brown; text-align: center"></p>
+    <input class="button button1" type="button" id="addProduct" value="Thêm" onclick="pro.addProduct()"><br/><br/>
+</fieldset>
+<br> <br>
+<table class="purple-square" border="1" width="1000" cellspacing="0" cellpadding="3" id="result0">
+
+
+    <script src="long.js"></script>
+
+
+</table>
+
+</body>
+</html>
