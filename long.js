@@ -170,7 +170,7 @@ let AppProducts = function () {
 let pro = new AppProducts();
 
 function logOut() {
-    return window.location = "home.html"
+    return window.location = "index.html"
 }
 
 function clearLogin() {
