@@ -50,7 +50,9 @@ let AppProducts = function () {
         "   17.3\" FHD display \n", "https://www.asus.com/media/global/products/qlGMPBolTjpdoiUF/P_setting_F5F5F5_1_90_end_225.png", "3",],
 
     ];
-
+    this.setLocalStorageListProducts = function () {
+        sessionStorage.listProducts = JSON.stringify(this.listProducts);
+    };
 
     this.getLocalStorageListProducts = function () {
         this.listProducts = JSON.parse(sessionStorage.listProducts);
@@ -75,9 +77,7 @@ let AppProducts = function () {
         document.getElementById("result0").innerHTML = sout;
     };
 
-    this.setLocalStorageListProducts = function () {
-        sessionStorage.listProducts = JSON.stringify(this.listProducts);
-    };
+
 
     this.addProduct = function () {
         let product = document.getElementById("newProduct").value;
